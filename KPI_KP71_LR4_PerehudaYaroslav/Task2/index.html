@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task2</title>
+  <script src="./editor.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="page-container">
+    <div class="content">
+      <h1 class="header">Кількість проданих авто</h1>
+      <ul class="table" id="table">
+        <li class="table-line">
+          <span class="table-item" id="button">
+            <button disabled>Delete</button>
+          </span>
+          <span class="table-item" id="key">
+            Марка авто
+          </span>
+          <span class="table-item" id="value">
+            Кількість
+          </span>
+        </li>
+      </ul>
+
+      <form action="#" id="form">
+        <h2 class="form-add">Додати нову марку авто</h2>
+        <div class="form-element">
+          <label class="property-name">
+            <span>
+              Марка
+            </span>
+          </label>
+          <input class="input" name="alt" type="text" value="" autocomplete="off" required/>
+        </div>
+        <div class="form-element">
+          <label class="property-name">
+            <span>
+              Кількість
+            </span>
+          </label>
+          <input class="input" name="alt" type="text" value="" autocomplete="off" required/>
+        </div>
+        <div class="form-element form-element-justify-end">
+          <input id="submit_button" class="submit-button" type="submit" value="Додати" />
+        </div>
+      </form>
+
+      <h2 class="form-add">Діаграма</h2>
+      <div class="diagram" id="diagram" ></div>
+    </div>
+  </div>
+
+  <template>
+    <li class="table-line" id="table_line">
+        <span class="table-item">
+            <button class="delete-button" id="button">Видалити</button>
+            <input type="hidden" id="key_input">
+            <input type="hidden" id="value_input">
+            <input type="hidden" id="color_input">
+            <input type="hidden" id="id_input">
+        </span>
+        <span class="table-item" id="key">
+        </span>
+        <span class="table-item" id="value">
+        </span>
+    </li>
+  </template>
+
+  <template>
+    <div class="diagram-item" id="diagram_item">
+      <div class="diagram-info">
+        <p>
+          Марка: <span id="key"></span>
+        </p>
+        <input type="hidden" id="id_input">
+        <p>
+          К-ть: <span id="value"></span>
+        </p>
+      </div>
+    </div>
+  </template>
+  <script src="event_listener.js"> </script>
+</body>
+</html>

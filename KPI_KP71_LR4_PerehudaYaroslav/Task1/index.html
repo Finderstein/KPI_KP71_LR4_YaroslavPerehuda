@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task1</title>
+  <script src="./editor.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="page-container">
+    <div class="content">
+      <h1 class="header">Зміна властивостей зображення</h1>
+
+      <div class="main-image-wrapper">
+        <img id="image" class="main-image" src="./public/image.jpg" alt="Steins;Gate"/>
+      </div>
+      
+      <form action="#" class="form" id="form">
+        <h2 class="form-properties">Зміна розмірів:</h2>
+        <div class="form-element">
+          <label class="property-name">
+            <span>
+              Висота(height)
+            </span>
+          </label>
+          <input class="input" name="height" type="text" value="500" required/>
+        </div>
+        <div class="form-element">
+          <label class="property-name">
+            <span>
+              Ширина(width)
+            </span>
+          </label>
+          <input class="input" name="width" type="text" value="500" required/>
+        </div>
+
+        <h2 class="form-properties">Зміна рамки:</h2>
+        <div class="form-element">
+          <label class="property-name">
+            <span>
+              Товщина рамки
+            </span>
+          </label>
+          <input class="input" name="border-width"type="text" value="0" required/>
+        </div>
+        <div class="form-element">
+          <label class="property-name">
+            <span>
+              Ширина рамки
+            </span>
+          </label>
+          <input class="input" name="border-color" type="text" value="white" required/>
+        </div>
+
+        <h2 class="form-properties">Додатково:</h2>
+        <div  class="form-element">
+          <label  class="property-name">
+            <span>
+              Альтернативний текст
+            </span>
+          </label>
+          <input class="input" name="alt" type="text" value="SteinsGate" required/>
+        </div>
+
+        <div class="form-element form-element-justify-end">
+          <input id="submit_button" class="submit-button" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./event_listener.js"> </script>
+</body>
+</html>

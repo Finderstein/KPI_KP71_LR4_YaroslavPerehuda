@@ -1,0 +1,1 @@
+document.getElementById('submit_button').addEventListener('click', Edit, false);
